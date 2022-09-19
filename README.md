@@ -1,2 +1,2 @@
-# repositorioprueba
-Prueba de creacion de repositorio Externo
+# Preentrega2AguirreIbarra
+Repositorio para Pre entrega 2 - Fernando Aguirre Ibarra
