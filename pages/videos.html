@@ -5,51 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>TIA MECHA VIDEOS</title>
-    
 </head>
-
-
 <body>
-    
-    <header id="header">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../IMG/TM_LOGO1.jpg" alt="logoTM">
-        </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./bio.html">Bio</a></li>
-                <li><a href="./discos.html">Discos</a></li>
-                <li><a href="./fotos.html">Fotos</a></li>
-                <li><a href="./videos.html">Videos</a></li>
-            </ul>
-        </nav>
+  <header id="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../IMG/TM_LOGO1.jpg" alt="logoTM">
+      </a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./bio.html">Bio</a></li>
+        <li><a href="./discos.html">Discos</a></li>
+        <li><a href="./fotos.html">Fotos</a></li>
+        <li><a href="./videos.html">Videos</a></li>
+      </ul>
+    </nav>
     </header>
-    
-    
-<div id="videorep">
+  <div id="videorep">
     <h1>VIDEO EN REPRODUCCION</h1><!-- aca deberia verse el video que se reproduce en grande -->
     <iframe width="500px" height="350" src="https://www.youtube.com/embed/TDpDadz3oBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> 
+  </div> 
+  <h2>MAS VIDEOS</h2><!-- Carousel Boostrap -->
+  <section id="masvideos"><!-- aca los demas videos para poder elegir el que quiero que se vea en grande -->
 
-<h2>MAS VIDEOS</h2>
-<section id="masvideos"><!-- aca los demas videos para poder elegir el que quiero que se vea en grande -->
-<div>
-    <iframe width="auto" height="auto"  src="https://www.youtube.com/embed/LhavzmFW_Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div>
-    <iframe width="auto" height="auto"  src="https://www.youtube.com/embed/9bBcSUm1zpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-    <div>
-    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/hxGOV09BM3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
-<div>
-    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/hxGOV09BM3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+        </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <iframe width="450px" height="300px"  src="https://www.youtube.com/embed/LhavzmFW_Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="450px" height="300px"  src="https://www.youtube.com/embed/9bBcSUm1zpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="450px" height="300px" src="https://www.youtube.com/embed/hxGOV09BM3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
 
 
 </section>
