@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 /*Global Styles -> Estilos para todo la pagina*/
-
 #header{
     display: flex;
     background-color: black;
@@ -14,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    min-height: 40px;        
+    min-height: 40px;      
 }
 #header .logo img{
     display: flex;
@@ -80,6 +78,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    bottom: 0;
 }
 #footer .copy p{
     color: rgb(157, 233, 233);
@@ -111,7 +110,6 @@
     padding: 5px 5px 5px 5px;
 }
 .proximasfechas {
-    
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
@@ -126,17 +124,13 @@
     border: 2px solid rgb(8, 8, 8);
     text-align: center;
     list-style: none;
-
 }
-
 .proximasfechas div h3{
     margin-top: 5px;
     padding: 5px;
     border: 2px solid rgb(105, 27, 27);
     text-align: center;
-
 }
-
 .contact_form{  
     width: 500px; 
     height: 500 px;
@@ -146,7 +140,6 @@
     background-color: #fbfbfb; 
     padding-left: 30px; 
 }
-
 input{
     background-color: #fbfbfb; 
     width: 100%; 
@@ -159,8 +152,6 @@ input{
     padding-left: 10px;
     margin-bottom: 20px; 
 }
-
-
 textarea{
     background-color: #fbfbfb; 
     width: 100%; 
@@ -168,20 +159,16 @@ textarea{
     border-radius: 5px;  
     border-style: solid; 
     border-width: 1px; 
-
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
     padding-top: 15px; 
 }
-
 label{
     display: block; 
     float: center;  
 }
-
 button{
-
     height: 45px; 
     padding-left: 5px;
     padding-right: 5px;   
@@ -195,56 +182,45 @@ button{
     width: 420px;   
     cursor: pointer;
 }
-
 button p{
     color: #fff; 
 }
-
 span{
     color: #6e676d; 
 }
-
 .aviso{
     font-size: 13px;  
     color: #0e0e0e;  
 }
-
 h1{
     font-size: 25px;  
     text-align: center; 
     padding-bottom: 20px; 
     color: #080808;
 }
-
 h3{
     font-size: 16px; 
     padding-bottom: 30px;
     color: #0e0e0e;   
 }
-
 p{
     font-size: 14px; 
     color: #0e0e0e; 
 }
-
 ::-webkit-input-placeholder {
 color: #a8a8a8;
 }
-
 ::-webkit-textarea-placeholder {
 color: #a8a8a8;
 }
-
 .formulario input:focus{
     outline:0;
     border: 1px solid #97d848;
 }
-
 .formulario textarea:focus{
     outline:0;
     border: 1px solid #97d848;
 }
-
 
 /*BIO*/
 
@@ -257,50 +233,66 @@ color: #a8a8a8;
     margin: 15px;
     padding: 15px;
     text-align: center;
-    font-size: xx-large;
-    
+    font-size: xx-large;}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
+    padding: 15px;
 }
-
-.comienzos{
+.grid .a{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     display: flex;
 }
-
-.comienzos img {
-    flex: 1;
-    padding: 0 px;
-    margin: 10px;
+.grid .b h3{
+    text-align: center;
+    margin-top: 20px;
 }
-
-.comienzos p {
-    flex: 2;
-    font-size: x-large;
-    padding: 20px;
-    margin: 15px;
+.grid .c h3{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
 }
-
-.avefenix{
+.grid .d{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     display: flex;
+    margin-bottom: 20px;
 }
-.avefenix img {
-    flex: 1;
-    padding: 0 px;
-    margin: 10px;
-}
-
-.avefenix p{
-    flex: 2;
-    font-size: x-large;
-    padding: 20px;
+.grid .a img{
+    max-width: 500px;
     margin: 15px;
+    padding: 15px;
+}
+.grid .d img{
+    max-width: 700px;
+    margin: 15px;
+    padding: 15px;
+}
+@media screen and (max-width: 930px)/*930 es porque hasta ese punto no se amontonan los botones con el logo*/ {
+    .grid {
+        display: block;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .grid h3 { 
+        text-align: center;
+    }
 }
 
 /*DISCOS*/
 
-#bodydiscos {
-    background-image: url(../IMG/FondoPage.jpg);
-}
 #discografia {  
-    background-color: rgba(112, 112, 99, 0.527);
+    background-image: url(../IMG/retro1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -323,29 +315,23 @@ color: #a8a8a8;
     height: auto;
     margin: 10px;
     padding: 20px;
-
 }
-
 .demotm h2{
-    
     text-decoration:underline;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 .asieslavida {
     display: center;
     text-align: center;
     margin-left: auto;
     margin-top: 30px;
 }
-
 .asieslavida h1 {
     font-size: xx-large;
     text-align: center;
     margin-bottom: 5px;
 }
-
 .asieslavida img {
     flex-direction: auto;
     width: 500px;
@@ -353,14 +339,12 @@ color: #a8a8a8;
     margin: 10px;
     padding: 20px;
 }
-
 .asieslavida h2{
     flex:auto;
     text-decoration:underline;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 .asieslavida ol{
     list-style: none;
 }
@@ -368,26 +352,21 @@ color: #a8a8a8;
 /*VIDEOS*/
 
 #videorep {
-    background-color: black;
-    margin: 10px;
+    background-image: url(../IMG/retro1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 #videorep h1 {
     text-align: center;
-
-    color: aquamarine;
+    color:black;
 }
-
-
-
 #masvideos, h2{
     background-color: rgb(196, 181, 181);
     display: flex;
     justify-content: center;
-    
 }
 #masvideos div {
     padding: 15px;
@@ -396,18 +375,17 @@ color: #a8a8a8;
     
 /*FOTOS*/
 
-#album {
-    background-color: blanchedalmond;
-    display: flex;
-    margin: 10px;
-    justify-content: space-around;
-
-    margin: 10px, 10px, 10px, 10px;
-    padding: 10px;
+.bodifotos{
+    height: 100%;
 }
-
-#album, h2{
-    
-    margin: 10px;
+.albums {
+    margin: 0;
+    padding: 0;
+    background-image: url(../IMG/retro1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.albumx {
     padding: 5px;
+    margin-top: 5px;
 }
