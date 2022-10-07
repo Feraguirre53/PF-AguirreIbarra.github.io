@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Global Styles -> Estilos para todo la pagina*/
+/*header*/
+#header {
+  border-bottom: 3px solid white;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#header .logo img {
+  height: 50px;
+  width: auto;
+  transition: all 300ms;
+}
+
+#header .logo img:hover {
+  transform: scale(1.15);
+}
+
+#header .menu ul li a:hover {
+  background: rgb(95, 88, 88);
+}
+
+#header .menu ul li a {
+  font-size: large;
+}
+
+/*footer*/
+.pie-pagina {
+  width: 100%;
+  background-color: black;
+  border-top: 3px solid white;
+  display: block;
+  position: fixed;
+  bottom: 0px;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 p {
+  margin: 0;
+  align-items: center;
+  color: aliceblue;
+  margin: 5px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  height: 40px;
+  line-height: 45px;
+  color: #fff;
+  background-color: #2d225f;
+  text-align: center;
+  transition: all 300ms ease;
+  margin: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: rgb(17, 17, 17);
+}
+
+.box {
+  margin: 0px;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+  }
+}
+/*HOME*/
+#bodyhome {
+  background-image: url(../IMG/Calle2.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+.nosotros .novedades {
+  background-color: rgb(209, 206, 206);
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 15px;
+  padding: 15px;
+  opacity: 75%;
+}
+.nosotros .novedades h1 {
+  background-color: rgb(116, 139, 139);
+}
+.nosotros .novedades li {
+  text-align: left;
+  border-bottom: 1px solid black;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+.nosotros .ultimovideo {
+  margin: 5px;
+  padding: 5px;
+  border: 2px blanchedalmond solid;
+}
+.nosotros .ultimovideo h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+  background-color: rgb(116, 139, 139);
+}
+
+.gridintro {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  align-items: center;
+  margin: 15px;
+}
+.gridintro .proximos {
+  text-align: center;
+  width: 100%;
+  background-image: url(../IMG/retro1.jpg);
+  background-size: auto;
+  background-size: 100%;
+  border: black 3PX solid;
+  padding: 20px;
+  margin: 30px;
+}
+.gridintro .proximos h1 {
+  border: 2px solid black;
+  background-color: beige;
+}
+.gridintro .proximos ul {
+  padding: 0px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.gridintro .proximos ul li {
+  display: flex;
+  text-align: justify;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+  margin: 0px;
+  padding: 0px;
+}
+.gridintro .proximos ul li h4 {
+  margin-bottom: 0;
+  align-items: center;
+  text-align: center;
+}
+.gridintro .proximos ul li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: aliceblue;
+  justify-content: center;
+}
+
+.gridnovedades {
+  display: flex;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  justify-content: center;
+  justify-items: center;
+  text-align: start;
+  padding: 15px;
+  margin: 15px;
+  align-items: center;
+  height: auto;
+}
+
+.noti {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(44, 53, 53);
+  border: black 1PX solid;
+  margin: 15PX;
+  padding: 15PX;
+}
+
+.noti ul li {
+  display: flex;
+  text-align: justify;
+  justify-content: space-around;
+}
+
+.intro img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  margin: 2px;
+  padding: 10px;
+  display: flex;
+  background-color: blueviolet;
+  margin: 15PX;
+  opacity: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  .nosotros {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(11, 12, 14);
+  }
+  .nosotros .novedades {
+    background-color: rgb(209, 206, 206);
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    max-width: 500px;
+  }
+  .nosotros .novedades h1 {
+    background-color: rgb(116, 139, 139);
+  }
+  .nosotros .novedades li {
+    text-align: left;
+    border-bottom: 1px solid black;
+    list-style: none;
+  }
+  .nosotros .ultimovideo {
+    background-color: rgb(116, 139, 139);
+    margin: 5px;
+    padding: 5px;
+    max-width: 500px;
+  }
+  .nosotros .ultimovideo iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gridintro {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+  }
+  .gridintro .proximos {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 100px;
+  }
+  .intro ul {
+    display: block;
+    text-align: center;
+  }
+  .intro ul li h4 {
+    font-size: small;
+  }
+}
+/*BIO*/
+#bodibio {
+  background-image: url(../IMG/retro1.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 70px;
+}
+#bodibio h1 {
+  color: black;
+}
+
+.biotm {
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  padding: 15px;
+  color: black;
+}
+
+.grid .a {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+}
+
+.grid .b h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid .c h3 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.grid .d {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.grid .a img {
+  max-width: 500px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.grid .d img {
+  max-width: 700px;
+  margin: 15px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 930px) {
+  .grid {
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .grid h3 {
+    text-align: center;
+  }
+}
+/*DISCOS*/
+#discografia {
+  background-image: url(../IMG/retro1.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.demotm {
+  display: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.demotm ol {
+  list-style: none;
+}
+
+.demotm h1 {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.demotm p {
+  display: center;
+}
+
+.demotm img {
+  flex-direction: auto;
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+}
+
+.demotm h2 {
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.asieslavida {
+  display: center;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.asieslavida h1 {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.asieslavida img {
+  flex-direction: auto;
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+}
+
+.asieslavida h2 {
+  flex: auto;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.asieslavida ol {
+  list-style: none;
+}
+
+@media screen and (max-width: 930px) {
+  #discografia {
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    background-attachment: scroll;
+  }
+}
+/*VIDEOS*/
+.videobody {
+  background-image: url(../IMG/retro1.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.videostm {
+  margin-top: 60px;
+  margin-bottom: 2px;
+}
+
+/*FOTOS*/
+.bodifotos {
+  height: 100%;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.albums {
+  margin: 0;
+  padding: 0;
+  background-image: url(../IMG/retro1.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.albumx {
+  padding: 5px;
+  margin-top: 5px;
+}/*# sourceMappingURL=main.css.map */
