@@ -266,7 +266,6 @@
             width: 300px;
             height: 200px;    
             }
-            
         }
     }
 }
@@ -438,12 +437,26 @@
     list-style: none;
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 800px){
     #discografia{
         display: block;
         margin-bottom: 100px;
         margin-top: 70px;
         background-attachment: scroll;
+        .asieslavida img {
+            flex-direction: column;
+            width: 80%;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+        .demotm img {
+            flex-direction: column;
+            width: 80%;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+        }
     }
 }
 
@@ -461,6 +474,23 @@
 .videostm{
     margin-top: 60px;
     margin-bottom: 2px;
+    width: 500px;
+    height: 500px;
+}
+@media screen and (max-width: 300px){
+    .videostm{ 
+        display: flex;
+        width: 80%;
+        height: 80%;
+        min-width: 50px;
+        .iframe{
+        display: flex;
+        width: 80%;
+        height: 80%;
+        min-width: 50px;
+        }
+    }
+    
 }
 /*FOTOS*/
 
@@ -474,9 +504,94 @@
     padding: 0;
     background-image: url(../IMG/retro1.jpg);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 100%;    
 }
 .albumx {
     padding: 5px;
     margin-top: 5px;
 }
+.fotoalbum{
+    border: 3px solid whitesmoke;
+    box-shadow: 0 5px 10px black;
+    overflow: hidden;
+    cursor: pointer;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .2s linear;}
+}
+
+.fotoalbum:hover img{
+    transform: scale(1.05);
+}
+
+/*album debut*/
+
+.galeria{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../IMG/retro1.jpg);
+    background-size: 100%;
+    .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+        .image{
+            height: 250px;
+            width: 350px;
+            border: 6px solid whitesmoke;
+            box-shadow: 0 5px 10px black;
+            overflow: hidden;
+            cursor: pointer;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: .2s linear;
+            }
+        }
+    }    
+}
+
+.galeria .image-container .image:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width:768px){
+    .galeria .popup-image img{
+        width: 95%;
+    }
+}
+
+.galeria .popup-image{
+    position: fixed;
+    top: 0;left: 0;
+    background: gray;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.galeria .popup-image span{
+        position: absolute;
+        top: 0; right: 10px;
+        font-size: 40px;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+        z-index: 100;}
+
+
+.galeria .popup-image img{
+        position:absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        border: 5px solid white;
+        border-radius: 5px;
+        width: 750px;
+        object-fit: cover;
+    }

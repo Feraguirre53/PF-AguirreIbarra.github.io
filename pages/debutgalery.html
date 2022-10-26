@@ -55,44 +55,33 @@
   </header>
   
   <section>
-    <div class="albums">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class ="albumx">DEBUT - LA MULA</h2>
-            <div class="fotoalbum">
-              <a href="../pages/debutgalery.html">
-                <img src="../IMG/DEBUT/Debut_1.jpg" alt="calleang" width="100%" height="auto">
-              </a>
-          </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class ="albumx">CALLE ANGOSTA</h2>
-            <div class="fotoalbum">
-            <a href="../pages/Calleangosta.html">
-              <img src="../IMG/Calle_Angosta/Calle1.jpg" alt="calleang" width="100%" height="auto">
-            </a>
-          </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class ="albumx">GRABACIONES</h2>
-            <div class="fotoalbum">
-            <a href="../pages/grabaciones.html">
-              <img src="../IMG/Grabaciones/Gabaciones_8.jpg" alt="calleang" width="100%" height="auto">
-            </a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class ="albumx">VARIAS</h2>
-            <div class="fotoalbum">
-            <a href="../pages/varias.html">
-              <img src="../IMG/Varias/Varias_.jpg" alt="calleang" width="100%" height="auto">              
-            </a>
-          </div>
-          </div>
-        </div>
+    <div class="galeria">
+      <div class="image-container">
+        <div class="image"><img src="../IMG/DEBUT/Debut_1.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_2.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_3.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_4.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_5.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_6.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_7.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_8.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_9.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_10.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_11.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_12.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_13.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_14.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_15.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_16.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_17.jpg" alt=""></div>
+        <div class="image"><img src="../IMG/DEBUT/Debut_18.jpg" alt=""></div>
+      </div>
+      <div class="popup-image">
+        <span>&times</span>
+        <img src="../IMG/DEBUT/Debut_1.jpg" alt="">
       </div>
     </div>
+
   </section>
 
   <footer class="pie-pagina">
@@ -109,6 +98,17 @@
     </div>
   </footer>
   <!-- JavaScript Bundle with Popper -->
+  <script>
+    document.querySelectorAll('.image-container img').forEach(image=>{
+      image.onclick = () =>{
+        document.querySelector('.popup-image').style.display= 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }});
+    document.querySelector('.popup-image span').onclick = () =>{document.querySelector('.popup-image').style.display = 'none';
+  }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
 </body>
+
 </html>
