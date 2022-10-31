@@ -107,25 +107,27 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin: 5px;  
-    padding: 5px;
+    margin: 15px;  
+
     .novedades{
         background-color: rgb(209, 206, 206);
         justify-content: center;
         text-align: center;
         width: 100%;
-        margin: 15px;
-        padding: 15px;
+        margin-top: 15px;
         opacity: 75%;
         h1{
             background-color: rgb(116, 139, 139);
+        }
+        ul{
+            margin: 5px;
+            padding: 5px;
         }
         li{
             text-align: left;
             border-bottom: 1px solid black;
             list-style: none;
-            margin: 5px;
-            padding: 5px;
+            margin: 20px;
         }
     }
     .ultimovideo{
@@ -164,14 +166,13 @@
             background-color: beige;
         }
         ul{
-            padding: 0px;
-            display: block;
-            align-items: center;
-            text-align: center;
+            padding: 2px;
+            margin: 5px;
             li{
                 display: flex;
-                text-align: justify;
-                justify-content: space-around;
+                
+                
+                justify-content: space-between;
                 border-bottom: 1px solid;
                 margin: 0px;
                 padding: 0px;
@@ -226,16 +227,17 @@
     max-width: 100%;
     height: auto;
     align-items: center;
-    margin: 2px;
     padding: 10px;
     display: flex;
     background-color: blueviolet;
-    margin: 15PX;
+    margin: 5PX;
     opacity: inherit;
 }
 
 @media screen and (max-width:800px){
     .nosotros{
+    margin: 5px;
+    padding: 5px;
     display: block;
     align-items: center;
     justify-content: center;
@@ -253,9 +255,10 @@
             background-color: rgb(116, 139, 139);
         }
         li{
-            text-align: left;
+            justify-content: space-between;
             border-bottom: 1px solid black;
             list-style: none;}
+
         }
         .ultimovideo{
             background-color: rgb(116, 139, 139);
@@ -273,28 +276,30 @@
 
 @media screen and (max-width: 800px){
     .gridintro {
-        display: block;
+        display: flex;
         width: 100%;
         margin: 5px;
         padding: 5px;
-        align-items: center;
+        justify-content: space-between;
         .proximos{
-            margin: 0px;
-            padding: 0px;
+            margin: 5px;
+            padding: 5px;
             width: 100%;
             height: auto;
             max-width: 500px;
             margin-bottom: 100px;
+            justify-content: space-betweenle;
         }
     }
     
     .intro ul {
         display: block;
-        text-align: center;
+        justify-content: space-between;
     }  
 
     .intro ul li h4{
-        font-size: small;
+        font-size: medium;
+        text-align: left;
     }
 }
 
@@ -310,7 +315,7 @@
     }    
 }
 .biotm {
-    margin: 15px;
+    margin: 5px;
     padding: 15px;
     text-align: center;
     font-size: xx-large;
@@ -362,8 +367,8 @@
     .grid {
         display: block;
         justify-content: center;
-        margin: 10px;
-        padding: 10px;
+        margin-top: -40px;
+        margin-bottom: 60px;
     }
     .grid h3 { 
         text-align: center;
@@ -469,26 +474,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .videostm{
     margin-top: 60px;
     margin-bottom: 2px;
     width: 500px;
-    height: 500px;
-}
-@media screen and (max-width: 300px){
+    height: 500px}
+@media screen and (max-width: 501px){
     .videostm{ 
-        display: flex;
-        width: 80%;
-        height: 80%;
-        min-width: 50px;
-        .iframe{
-        display: flex;
-        width: 80%;
-        height: 80%;
-        min-width: 50px;
-        }
+        display: block;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        width:max-content;
+        height: fit-content;
     }
     
 }
@@ -526,7 +526,7 @@
     transform: scale(1.05);
 }
 
-/*album debut*/
+/*style albums*/
 
 .galeria{
     position: relative;
